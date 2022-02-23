@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{582B9C61-742D-4D2B-9C72-42C088CE473D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SimpleProject</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>../../MofLibrary/Include;../../../MofLibrary/Include;$(IncludePath);</IncludePath>
+    <LibraryPath>../../MofLibrary/Library;../../../MofLibrary/Library;$(LibraryPath);</LibraryPath>
+    <OutDir>$(SolutionDir)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>../../MofLibrary/Include;../../../MofLibrary/Include;$(IncludePath);</IncludePath>
+    <LibraryPath>../../MofLibrary/Library;../../../MofLibrary/Library;$(LibraryPath);</LibraryPath>
+    <OutDir>$(SolutionDir)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Library\Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Library\Library;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD;</IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <PreprocessorDefinitions>USERNAME=$(USERNAME);</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Library\Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Library\Library;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <ResourceCompile>
+      <PreprocessorDefinitions>USERNAME=$(USERNAME);</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Anya.cpp" />
+    <ClCompile Include="AnyaOrb.cpp" />
+    <ClCompile Include="BulletBase.cpp" />
+    <ClCompile Include="ChargeLaser.cpp" />
+    <ClCompile Include="ChargeShot.cpp" />
+    <ClCompile Include="ContinuousenEnergyShot.cpp" />
+    <ClCompile Include="SceneSelectOpponent.cpp" />
+    <ClCompile Include="DoubtRing.cpp" />
+    <ClCompile Include="ExplosionShot.cpp" />
+    <ClCompile Include="GameApp.cpp" />
+    <ClCompile Include="GameDefine.cpp" />
+    <ClCompile Include="GrowShot.cpp" />
+    <ClCompile Include="HomingGun.cpp" />
+    <ClCompile Include="HomingShot.cpp" />
+    <ClCompile Include="JOKER.cpp" />
+    <ClCompile Include="LaserDance.cpp" />
+    <ClCompile Include="Lovey.cpp" />
+    <ClCompile Include="MachineGun.cpp" />
+    <ClCompile Include="MachShot.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="RipplesBullet.cpp" />
+    <ClCompile Include="RipplesShot.cpp" />
+    <ClCompile Include="SceneBase.cpp" />
+    <ClCompile Include="SceneBattle.cpp" />
+    <ClCompile Include="SceneCharacterSelect.cpp" />
+    <ClCompile Include="SceneMenu.cpp" />
+    <ClCompile Include="SceneOption.cpp" />
+    <ClCompile Include="SceneTitle.cpp" />
+    <ClCompile Include="SonicBeam.cpp" />
+    <ClCompile Include="TrickGun.cpp" />
+    <ClCompile Include="WaveShot.cpp" />
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="YamadaBall.cpp" />
+    <ClCompile Include="YamadaBeam.cpp" />
+    <ClCompile Include="YamadaBlizzard.cpp" />
+    <ClCompile Include="YamadaOrb.cpp" />
+    <ClCompile Include="YamadaOrbLaunch.cpp" />
+    <ClCompile Include="YamadaTarou.cpp" />
+    <ClCompile Include="YamadaWorld.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Anya.h" />
+    <ClInclude Include="AnyaOrb.h" />
+    <ClInclude Include="BulletBase.h" />
+    <ClInclude Include="ChargeLaser.h" />
+    <ClInclude Include="ChargeShot.h" />
+    <ClInclude Include="ContinuousenEnergyShot.h" />
+    <ClInclude Include="SceneSelectOpponent.h" />
+    <ClInclude Include="DoubtRing.h" />
+    <ClInclude Include="ExplosionShot.h" />
+    <ClInclude Include="GameApp.h" />
+    <ClInclude Include="GameDefine.h" />
+    <ClInclude Include="GrowShot.h" />
+    <ClInclude Include="HomingGun.h" />
+    <ClInclude Include="HomingShot.h" />
+    <ClInclude Include="JOKER.h" />
+    <ClInclude Include="LaserDance.h" />
+    <ClInclude Include="Lovey.h" />
+    <ClInclude Include="MachineGun.h" />
+    <ClInclude Include="MachShot.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="RipplesBullet.h" />
+    <ClInclude Include="RipplesShot.h" />
+    <ClInclude Include="SceneBase.h" />
+    <ClInclude Include="SceneBattle.h" />
+    <ClInclude Include="SceneCharacterSelect.h" />
+    <ClInclude Include="SceneMenu.h" />
+    <ClInclude Include="SceneOption.h" />
+    <ClInclude Include="SceneTitle.h" />
+    <ClInclude Include="SonicBeam.h" />
+    <ClInclude Include="TrickGun.h" />
+    <ClInclude Include="WaveShot.h" />
+    <ClInclude Include="YamadaBall.h" />
+    <ClInclude Include="YamadaBeam.h" />
+    <ClInclude Include="YamadaBlizzard.h" />
+    <ClInclude Include="YamadaOrb.h" />
+    <ClInclude Include="YamadaOrbLaunch.h" />
+    <ClInclude Include="YamadaTarou.h" />
+    <ClInclude Include="YamadaWorld.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Version.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,2 @@
+3,Battle,Battle1,Menue,
+25,Beam,Cannon,Finish,HandGun,Hit,Laser,MashineGun,PowerShot1,PowerShot2,Recovery,Shot,ShotGun,Start,Warp,Bomb,Ripples,Trick,Trick2,Invers,Slow,YamadaOh!,YamadaYeah!,YamadaBall,YamadaBli,Yamadaorb
