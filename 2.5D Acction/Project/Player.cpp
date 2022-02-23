@@ -29,35 +29,35 @@ void CPlayer::PosInitialize(int no) {
 	m_bLose = false;
 	if (m_PlayerNo == 0)
 	{
-		m_AreaRect = CRectangle(-38, -21, -5, 27);
+		m_AreaRect = CRectangle(0, 0, m_Width / 16 * 7, m_Height / 8 * 7);
 	}
 	else
 	{
-		m_AreaRect = CRectangle(4, -21, 38, 28);
+		m_AreaRect = CRectangle(m_Width / 16 * 9, 0, m_Width, m_Height / 8 * 7);
 	}
 }
 
 void CPlayer::UpdateMove() {
 	int inv = CJokerSkillManager::GetInstance().GetInver(m_PlayerNo);
 	int slow = CJokerSkillManager::GetInstance().GetSlow(m_PlayerNo);
-	m_Pos.x += m_Move.x * inv / slow * 0.1f;
-	m_Pos.y += m_Move.y * inv / slow * 0.1f;
+	m_Pos.x += m_Move.x * inv / slow;
+	m_Pos.y -= m_Move.y * inv / slow;
 
-	if (m_Pos.x < m_AreaRect.Left)
+	if (m_Pos.x - m_Radius < m_AreaRect.Left)
 	{
-		m_Pos.x = m_AreaRect.Left ;
+		m_Pos.x = m_AreaRect.Left + m_Radius;
 	}
-	else if (m_Pos.x > m_AreaRect.Right)
+	else if (m_Pos.x + m_Radius > m_AreaRect.Right)
 	{
-		m_Pos.x = m_AreaRect.Right;
+		m_Pos.x = m_AreaRect.Right - m_Radius;
 	}
-	if (m_Pos.y < m_AreaRect.Top)
+	if (m_Pos.y - m_Radius < m_AreaRect.Top)
 	{
-		m_Pos.y = m_AreaRect.Top ;
+		m_Pos.y = m_AreaRect.Top + m_Radius;
 	}
-	else if (m_Pos.y > m_AreaRect.Bottom)
+	else if (m_Pos.y + m_Radius > m_AreaRect.Bottom)
 	{
-		m_Pos.y = m_AreaRect.Bottom ;
+		m_Pos.y = m_AreaRect.Bottom - m_Radius;
 	}
 
 	m_Move.x = 0;
@@ -79,13 +79,6 @@ void CPlayer::UpdateMove() {
 	{
 		m_Move.y = CInputManager::GetInstance().GetVertical(pno) * m_Speed;
 	}
-}
-
-void CPlayer::Render() {
-	CMatrix44 matWorld;
-	matWorld.Scaling(1, 1, 1);
-	matWorld.SetTranslation(m_Pos.x,0, m_Pos.y);
-	CGraphicsUtilities::RenderSphere(matWorld, CVector4(1.0f, 0.0f, 0.0f, 1.0f));
 }
 
 void CPlayer::Damage(int damage, int skill) {

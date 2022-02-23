@@ -406,8 +406,6 @@ void JOKER::Fly(CCircle enemy) {
 }
 
 void JOKER::Render() {
-	CPlayer::Render();
-	/*
 	CGraphicsUtilities::RenderCircle(GetRenderCircle(), MOF_XRGB(255, 0, 0));
 	CGraphicsUtilities::RenderCircle(GetRenderGrazeCircle(), MOF_XRGB(255, 100, 100));
 	for (int i = 0; i < m_DoubtRingCount; ++i)
@@ -437,7 +435,6 @@ void JOKER::Render() {
 	x = m_Pos.x - x * scale / 2;
 	y = m_Pos.y - y * scale / 2;
 	CTextureManager::GetInstance().GetCharacter(2).RenderScale(x, y, scale);
-	*/
 }
 
 void JOKER::Release() {

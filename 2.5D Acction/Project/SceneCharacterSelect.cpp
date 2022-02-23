@@ -105,10 +105,6 @@ void CSceneCharacterSelect::Update() {
 	}
 }
 
-void CSceneCharacterSelect::UpdateDebug() {
-
-}
-
 void CSceneCharacterSelect::RetrunMenu() {
 	CInputManager::GetInstance().SelectVertical(m_MenuPlayer, m_MenuSelect, m_MenuItemCount, 0, true);
 	if (CInputManager::GetInstance().GetPush(m_MenuPlayer, 1))

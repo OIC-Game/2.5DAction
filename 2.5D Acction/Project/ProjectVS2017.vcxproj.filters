@@ -1,329 +1,293 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="ソース ファイル">
+    <Filter Include="mソース ファイル">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="ヘッダー ファイル">
+    <Filter Include="mヘッダー ファイル">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="リソース ファイル">
+    <Filter Include="mリソース ファイル">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="ヘッダー ファイル\Manager">
-      <UniqueIdentifier>{45e6a649-444f-4449-ad98-cd0ad81945af}</UniqueIdentifier>
+    <Filter Include="mソース ファイル\Character">
+      <UniqueIdentifier>{7798e7a5-1227-4ab8-b0ca-45ab0576fc59}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\Manager">
-      <UniqueIdentifier>{f2ce4065-79fe-40be-a216-3ce3c8f6f58d}</UniqueIdentifier>
+    <Filter Include="mソース ファイル\Character\Anya">
+      <UniqueIdentifier>{31b96196-0b5f-4ffe-8c64-cf4e8d1f1b0c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ヘッダー ファイル\Scene">
-      <UniqueIdentifier>{e6475124-2e17-49fa-a7dd-a909ffb0a2f9}</UniqueIdentifier>
+    <Filter Include="mヘッダー ファイル\Character">
+      <UniqueIdentifier>{71449b78-c32f-47b4-b17c-61a808d860b2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\Scene">
-      <UniqueIdentifier>{ad5589bf-5fa2-4021-94aa-f523fdb6c98c}</UniqueIdentifier>
+    <Filter Include="mヘッダー ファイル\Character\Anya">
+      <UniqueIdentifier>{c6e39a26-7d9b-46ed-a03a-3a4b011d1dae}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ヘッダー ファイル\Character">
-      <UniqueIdentifier>{ffbb7237-e581-4dbf-bc17-a91741f88df1}</UniqueIdentifier>
+    <Filter Include="mソース ファイル\Character\Joker">
+      <UniqueIdentifier>{76fdeec2-61fd-46e6-827e-f5aef4426f7d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\Character">
-      <UniqueIdentifier>{77f52720-6d03-431e-ad0e-a47ea317bac4}</UniqueIdentifier>
+    <Filter Include="mヘッダー ファイル\Character\Joker">
+      <UniqueIdentifier>{fe918709-3687-400d-9134-350243e35a0b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\Character\Anya">
-      <UniqueIdentifier>{160b23db-c547-4872-8197-f592159c7f8e}</UniqueIdentifier>
+    <Filter Include="mソース ファイル\Character\Lovey">
+      <UniqueIdentifier>{9bd7a410-ae36-4db3-b883-18aa03b3d738}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ヘッダー ファイル\Character\Anya">
-      <UniqueIdentifier>{137a002d-0491-4b7a-97b9-184c711baefe}</UniqueIdentifier>
+    <Filter Include="mヘッダー ファイル\Character\Lovey">
+      <UniqueIdentifier>{f6189669-9808-4325-85ce-6da49a6e1914}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ヘッダー ファイル\Character\JOKER">
-      <UniqueIdentifier>{3c5aeed4-beff-46eb-bc1f-2b571ac285f1}</UniqueIdentifier>
+    <Filter Include="mソース ファイル\Character\Yamada">
+      <UniqueIdentifier>{49e7a539-8b57-47f8-a8b5-ab39e0c76981}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\Character\JOKER">
-      <UniqueIdentifier>{5ae61ff6-ec18-4341-8ffb-816723598d4f}</UniqueIdentifier>
+    <Filter Include="mヘッダー ファイル\Character\Yamada">
+      <UniqueIdentifier>{d3be3a60-672d-44ef-a9e2-2cab73a4ac26}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\Character\Lovey">
-      <UniqueIdentifier>{8560104c-7c8d-44ba-b017-aea118620187}</UniqueIdentifier>
+    <Filter Include="mソース ファイル\Scene">
+      <UniqueIdentifier>{c3a045ca-51ae-4dda-b1ac-c74061f18611}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ヘッダー ファイル\Character\Lovey">
-      <UniqueIdentifier>{c93f74a0-705c-4fd6-93c3-d4425b04b691}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Character\YamadaTarou">
-      <UniqueIdentifier>{72cfbd56-c8b9-4b3a-a7d1-6ffca54cee0f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Character\YamadaTarou">
-      <UniqueIdentifier>{045f3cfc-4a19-47fe-b00b-fa0741b1d53c}</UniqueIdentifier>
+    <Filter Include="mヘッダー ファイル\Scene">
+      <UniqueIdentifier>{baad864c-a1b8-4d9a-bea7-018390a274b8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinMain.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>mソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="GameApp.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="InputManager.cpp">
-      <Filter>ソース ファイル\Manager</Filter>
-    </ClCompile>
-    <ClCompile Include="SoundManager.cpp">
-      <Filter>ソース ファイル\Manager</Filter>
-    </ClCompile>
-    <ClCompile Include="TextureManager.cpp">
-      <Filter>ソース ファイル\Manager</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneBase.cpp">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneBattle.cpp">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneCharacterSelect.cpp">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneMenu.cpp">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneOption.cpp">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneSelectOpponent.cpp">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneTitle.cpp">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>ソース ファイル\Character</Filter>
-    </ClCompile>
-    <ClCompile Include="Anya.cpp">
-      <Filter>ソース ファイル\Character\Anya</Filter>
-    </ClCompile>
-    <ClCompile Include="JOKER.cpp">
-      <Filter>ソース ファイル\Character\JOKER</Filter>
-    </ClCompile>
-    <ClCompile Include="Lovey.cpp">
-      <Filter>ソース ファイル\Character\Lovey</Filter>
+      <Filter>mソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="YamadaTarou.cpp">
-      <Filter>ソース ファイル\Character\YamadaTarou</Filter>
-    </ClCompile>
-    <ClCompile Include="BulletBase.cpp">
-      <Filter>ソース ファイル\Character</Filter>
-    </ClCompile>
-    <ClCompile Include="JokerSkillManager.cpp">
-      <Filter>ソース ファイル\Manager</Filter>
-    </ClCompile>
-    <ClCompile Include="AnyaOrb.cpp">
-      <Filter>ソース ファイル\Character\Anya</Filter>
-    </ClCompile>
-    <ClCompile Include="ExplosionShot.cpp">
-      <Filter>ソース ファイル\Character\Anya</Filter>
-    </ClCompile>
-    <ClCompile Include="HomingGun.cpp">
-      <Filter>ソース ファイル\Character\Anya</Filter>
-    </ClCompile>
-    <ClCompile Include="LaserDance.cpp">
-      <Filter>ソース ファイル\Character\Anya</Filter>
-    </ClCompile>
-    <ClCompile Include="MachShot.cpp">
-      <Filter>ソース ファイル\Character\Anya</Filter>
-    </ClCompile>
-    <ClCompile Include="RipplesBullet.cpp">
-      <Filter>ソース ファイル\Character\Anya</Filter>
-    </ClCompile>
-    <ClCompile Include="RipplesShot.cpp">
-      <Filter>ソース ファイル\Character\Anya</Filter>
-    </ClCompile>
-    <ClCompile Include="SonicBeam.cpp">
-      <Filter>ソース ファイル\Character\Anya</Filter>
-    </ClCompile>
-    <ClCompile Include="WaveShot.cpp">
-      <Filter>ソース ファイル\Character\Anya</Filter>
-    </ClCompile>
-    <ClCompile Include="DoubtRing.cpp">
-      <Filter>ソース ファイル\Character\JOKER</Filter>
-    </ClCompile>
-    <ClCompile Include="TrickGun.cpp">
-      <Filter>ソース ファイル\Character\JOKER</Filter>
-    </ClCompile>
-    <ClCompile Include="ChargeLaser.cpp">
-      <Filter>ソース ファイル\Character\Lovey</Filter>
-    </ClCompile>
-    <ClCompile Include="ChargeShot.cpp">
-      <Filter>ソース ファイル\Character\Lovey</Filter>
-    </ClCompile>
-    <ClCompile Include="ContinuousenEnergyShot.cpp">
-      <Filter>ソース ファイル\Character\Lovey</Filter>
-    </ClCompile>
-    <ClCompile Include="HomingShot.cpp">
-      <Filter>ソース ファイル\Character\Lovey</Filter>
-    </ClCompile>
-    <ClCompile Include="MachineGun.cpp">
-      <Filter>ソース ファイル\Character\Lovey</Filter>
-    </ClCompile>
-    <ClCompile Include="YamadaBall.cpp">
-      <Filter>ソース ファイル\Character\YamadaTarou</Filter>
-    </ClCompile>
-    <ClCompile Include="YamadaBeam.cpp">
-      <Filter>ソース ファイル\Character\YamadaTarou</Filter>
-    </ClCompile>
-    <ClCompile Include="YamadaBlizzard.cpp">
-      <Filter>ソース ファイル\Character\YamadaTarou</Filter>
+      <Filter>mソース ファイル\Character\Yamada</Filter>
     </ClCompile>
     <ClCompile Include="YamadaOrb.cpp">
-      <Filter>ソース ファイル\Character\YamadaTarou</Filter>
+      <Filter>mソース ファイル\Character\Yamada</Filter>
     </ClCompile>
     <ClCompile Include="YamadaOrbLaunch.cpp">
-      <Filter>ソース ファイル\Character\YamadaTarou</Filter>
+      <Filter>mソース ファイル\Character\Yamada</Filter>
+    </ClCompile>
+    <ClCompile Include="JOKER.cpp">
+      <Filter>mソース ファイル\Character\Joker</Filter>
+    </ClCompile>
+    <ClCompile Include="Anya.cpp">
+      <Filter>mソース ファイル\Character\Anya</Filter>
+    </ClCompile>
+    <ClCompile Include="Lovey.cpp">
+      <Filter>mソース ファイル\Character\Lovey</Filter>
+    </ClCompile>
+    <ClCompile Include="YamadaBeam.cpp">
+      <Filter>mソース ファイル\Character\Yamada</Filter>
+    </ClCompile>
+    <ClCompile Include="YamadaBall.cpp">
+      <Filter>mソース ファイル\Character\Yamada</Filter>
+    </ClCompile>
+    <ClCompile Include="YamadaBlizzard.cpp">
+      <Filter>mソース ファイル\Character\Yamada</Filter>
     </ClCompile>
     <ClCompile Include="YamadaWorld.cpp">
-      <Filter>ソース ファイル\Character\YamadaTarou</Filter>
+      <Filter>mソース ファイル\Character\Yamada</Filter>
+    </ClCompile>
+    <ClCompile Include="ChargeShot.cpp">
+      <Filter>mソース ファイル\Character\Lovey</Filter>
+    </ClCompile>
+    <ClCompile Include="MachineGun.cpp">
+      <Filter>mソース ファイル\Character\Lovey</Filter>
+    </ClCompile>
+    <ClCompile Include="ChargeLaser.cpp">
+      <Filter>mソース ファイル\Character\Lovey</Filter>
+    </ClCompile>
+    <ClCompile Include="TrickGun.cpp">
+      <Filter>mソース ファイル\Character\Joker</Filter>
+    </ClCompile>
+    <ClCompile Include="DoubtRing.cpp">
+      <Filter>mソース ファイル\Character\Joker</Filter>
+    </ClCompile>
+    <ClCompile Include="HomingShot.cpp">
+      <Filter>mソース ファイル\Character\Lovey</Filter>
+    </ClCompile>
+    <ClCompile Include="AnyaOrb.cpp">
+      <Filter>mソース ファイル\Character\Anya</Filter>
+    </ClCompile>
+    <ClCompile Include="RipplesShot.cpp">
+      <Filter>mソース ファイル\Character\Anya</Filter>
+    </ClCompile>
+    <ClCompile Include="RipplesBullet.cpp">
+      <Filter>mソース ファイル\Character\Anya</Filter>
     </ClCompile>
     <ClCompile Include="GrowShot.cpp">
-      <Filter>ソース ファイル\Character\Anya</Filter>
+      <Filter>mソース ファイル\Character\Anya</Filter>
+    </ClCompile>
+    <ClCompile Include="MachShot.cpp">
+      <Filter>mソース ファイル\Character\Anya</Filter>
+    </ClCompile>
+    <ClCompile Include="SonicBeam.cpp">
+      <Filter>mソース ファイル\Character\Anya</Filter>
+    </ClCompile>
+    <ClCompile Include="ExplosionShot.cpp">
+      <Filter>mソース ファイル\Character\Anya</Filter>
+    </ClCompile>
+    <ClCompile Include="WaveShot.cpp">
+      <Filter>mソース ファイル\Character\Anya</Filter>
+    </ClCompile>
+    <ClCompile Include="LaserDance.cpp">
+      <Filter>mソース ファイル\Character\Anya</Filter>
+    </ClCompile>
+    <ClCompile Include="HomingGun.cpp">
+      <Filter>mソース ファイル\Character\Anya</Filter>
+    </ClCompile>
+    <ClCompile Include="GameDefine.cpp">
+      <Filter>mソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ContinuousenEnergyShot.cpp">
+      <Filter>mソース ファイル\Character\Lovey</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBase.cpp">
+      <Filter>mソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBattle.cpp">
+      <Filter>mソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneCharacterSelect.cpp">
+      <Filter>mソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMenu.cpp">
+      <Filter>mソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneOption.cpp">
+      <Filter>mソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneTitle.cpp">
+      <Filter>mソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneSelectOpponent.cpp">
+      <Filter>mソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>mソース ファイル\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletBase.cpp">
+      <Filter>mソース ファイル\Character</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameApp.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="InputManager.h">
-      <Filter>ヘッダー ファイル\Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="SoundManager.h">
-      <Filter>ヘッダー ファイル\Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="TextureManager.h">
-      <Filter>ヘッダー ファイル\Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneNo.h">
-      <Filter>ヘッダー ファイル\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneBase.h">
-      <Filter>ヘッダー ファイル\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneBattle.h">
-      <Filter>ヘッダー ファイル\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneCharacterSelect.h">
-      <Filter>ヘッダー ファイル\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneMenu.h">
-      <Filter>ヘッダー ファイル\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneOption.h">
-      <Filter>ヘッダー ファイル\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneSelectOpponent.h">
-      <Filter>ヘッダー ファイル\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneTitle.h">
-      <Filter>ヘッダー ファイル\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneFactory.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="OpponentManager.h">
-      <Filter>ヘッダー ファイル\Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="ControlManager.h">
-      <Filter>ヘッダー ファイル\Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>ヘッダー ファイル\Character</Filter>
-    </ClInclude>
-    <ClInclude Include="Anya.h">
-      <Filter>ヘッダー ファイル\Character\Anya</Filter>
-    </ClInclude>
-    <ClInclude Include="JOKER.h">
-      <Filter>ヘッダー ファイル\Character\JOKER</Filter>
-    </ClInclude>
-    <ClInclude Include="Lovey.h">
-      <Filter>ヘッダー ファイル\Character\Lovey</Filter>
-    </ClInclude>
-    <ClInclude Include="YamadaTarou.h">
-      <Filter>ヘッダー ファイル\Character\YamadaTarou</Filter>
-    </ClInclude>
-    <ClInclude Include="BulletBase.h">
-      <Filter>ヘッダー ファイル\Character</Filter>
-    </ClInclude>
-    <ClInclude Include="JokerSkillManager.h">
-      <Filter>ヘッダー ファイル\Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="AnyaOrb.h">
-      <Filter>ヘッダー ファイル\Character\Anya</Filter>
-    </ClInclude>
-    <ClInclude Include="ExplosionShot.h">
-      <Filter>ヘッダー ファイル\Character\Anya</Filter>
-    </ClInclude>
-    <ClInclude Include="GrowShot.h">
-      <Filter>ヘッダー ファイル\Character\Anya</Filter>
-    </ClInclude>
-    <ClInclude Include="HomingGun.h">
-      <Filter>ヘッダー ファイル\Character\Anya</Filter>
-    </ClInclude>
-    <ClInclude Include="LaserDance.h">
-      <Filter>ヘッダー ファイル\Character\Anya</Filter>
-    </ClInclude>
-    <ClInclude Include="MachShot.h">
-      <Filter>ヘッダー ファイル\Character\Anya</Filter>
-    </ClInclude>
-    <ClInclude Include="RipplesBullet.h">
-      <Filter>ヘッダー ファイル\Character\Anya</Filter>
-    </ClInclude>
-    <ClInclude Include="RipplesShot.h">
-      <Filter>ヘッダー ファイル\Character\Anya</Filter>
-    </ClInclude>
-    <ClInclude Include="SonicBeam.h">
-      <Filter>ヘッダー ファイル\Character\Anya</Filter>
-    </ClInclude>
-    <ClInclude Include="WaveShot.h">
-      <Filter>ヘッダー ファイル\Character\Anya</Filter>
-    </ClInclude>
-    <ClInclude Include="DoubtRing.h">
-      <Filter>ヘッダー ファイル\Character\JOKER</Filter>
-    </ClInclude>
-    <ClInclude Include="TrickGun.h">
-      <Filter>ヘッダー ファイル\Character\JOKER</Filter>
-    </ClInclude>
-    <ClInclude Include="ChargeShot.h">
-      <Filter>ヘッダー ファイル\Character\Lovey</Filter>
-    </ClInclude>
-    <ClInclude Include="ChargeLaser.h">
-      <Filter>ヘッダー ファイル\Character\Lovey</Filter>
-    </ClInclude>
-    <ClInclude Include="ContinuousenEnergyShot.h">
-      <Filter>ヘッダー ファイル\Character\Lovey</Filter>
-    </ClInclude>
-    <ClInclude Include="HomingShot.h">
-      <Filter>ヘッダー ファイル\Character\Lovey</Filter>
-    </ClInclude>
-    <ClInclude Include="MachineGun.h">
-      <Filter>ヘッダー ファイル\Character\Lovey</Filter>
-    </ClInclude>
-    <ClInclude Include="YamadaBall.h">
-      <Filter>ヘッダー ファイル\Character\YamadaTarou</Filter>
-    </ClInclude>
-    <ClInclude Include="YamadaBeam.h">
-      <Filter>ヘッダー ファイル\Character\YamadaTarou</Filter>
-    </ClInclude>
-    <ClInclude Include="YamadaBlizzard.h">
-      <Filter>ヘッダー ファイル\Character\YamadaTarou</Filter>
+      <Filter>mヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="YamadaOrb.h">
-      <Filter>ヘッダー ファイル\Character\YamadaTarou</Filter>
+      <Filter>mヘッダー ファイル\Character\Yamada</Filter>
+    </ClInclude>
+    <ClInclude Include="YamadaTarou.h">
+      <Filter>mヘッダー ファイル\Character\Yamada</Filter>
     </ClInclude>
     <ClInclude Include="YamadaOrbLaunch.h">
-      <Filter>ヘッダー ファイル\Character\YamadaTarou</Filter>
+      <Filter>mヘッダー ファイル\Character\Yamada</Filter>
+    </ClInclude>
+    <ClInclude Include="JOKER.h">
+      <Filter>mヘッダー ファイル\Character\Joker</Filter>
+    </ClInclude>
+    <ClInclude Include="Anya.h">
+      <Filter>mヘッダー ファイル\Character\Anya</Filter>
+    </ClInclude>
+    <ClInclude Include="Lovey.h">
+      <Filter>mヘッダー ファイル\Character\Lovey</Filter>
+    </ClInclude>
+    <ClInclude Include="YamadaBeam.h">
+      <Filter>mヘッダー ファイル\Character\Yamada</Filter>
+    </ClInclude>
+    <ClInclude Include="YamadaBall.h">
+      <Filter>mヘッダー ファイル\Character\Yamada</Filter>
+    </ClInclude>
+    <ClInclude Include="YamadaBlizzard.h">
+      <Filter>mヘッダー ファイル\Character\Yamada</Filter>
     </ClInclude>
     <ClInclude Include="YamadaWorld.h">
-      <Filter>ヘッダー ファイル\Character\YamadaTarou</Filter>
+      <Filter>mヘッダー ファイル\Character\Yamada</Filter>
+    </ClInclude>
+    <ClInclude Include="ChargeShot.h">
+      <Filter>mヘッダー ファイル\Character\Lovey</Filter>
+    </ClInclude>
+    <ClInclude Include="MachineGun.h">
+      <Filter>mヘッダー ファイル\Character\Lovey</Filter>
+    </ClInclude>
+    <ClInclude Include="ChargeLaser.h">
+      <Filter>mヘッダー ファイル\Character\Lovey</Filter>
+    </ClInclude>
+    <ClInclude Include="TrickGun.h">
+      <Filter>mヘッダー ファイル\Character\Joker</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubtRing.h">
+      <Filter>mヘッダー ファイル\Character\Joker</Filter>
+    </ClInclude>
+    <ClInclude Include="HomingShot.h">
+      <Filter>mヘッダー ファイル\Character\Lovey</Filter>
+    </ClInclude>
+    <ClInclude Include="AnyaOrb.h">
+      <Filter>mヘッダー ファイル\Character\Anya</Filter>
+    </ClInclude>
+    <ClInclude Include="RipplesShot.h">
+      <Filter>mヘッダー ファイル\Character\Anya</Filter>
+    </ClInclude>
+    <ClInclude Include="RipplesBullet.h">
+      <Filter>mヘッダー ファイル\Character\Anya</Filter>
+    </ClInclude>
+    <ClInclude Include="GrowShot.h">
+      <Filter>mヘッダー ファイル\Character\Anya</Filter>
+    </ClInclude>
+    <ClInclude Include="MachShot.h">
+      <Filter>mヘッダー ファイル\Character\Anya</Filter>
+    </ClInclude>
+    <ClInclude Include="SonicBeam.h">
+      <Filter>mヘッダー ファイル\Character\Anya</Filter>
+    </ClInclude>
+    <ClInclude Include="ExplosionShot.h">
+      <Filter>mヘッダー ファイル\Character\Anya</Filter>
+    </ClInclude>
+    <ClInclude Include="WaveShot.h">
+      <Filter>mヘッダー ファイル\Character\Anya</Filter>
+    </ClInclude>
+    <ClInclude Include="LaserDance.h">
+      <Filter>mヘッダー ファイル\Character\Anya</Filter>
+    </ClInclude>
+    <ClInclude Include="HomingGun.h">
+      <Filter>mヘッダー ファイル\Character\Anya</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDefine.h">
+      <Filter>mヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ContinuousenEnergyShot.h">
+      <Filter>mヘッダー ファイル\Character\Lovey</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBase.h">
+      <Filter>mヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBattle.h">
+      <Filter>mヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneCharacterSelect.h">
+      <Filter>mヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMenu.h">
+      <Filter>mヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneOption.h">
+      <Filter>mヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneTitle.h">
+      <Filter>mヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneSelectOpponent.h">
+      <Filter>mヘッダー ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>mヘッダー ファイル\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletBase.h">
+      <Filter>mヘッダー ファイル\Character</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Version.rc">
-      <Filter>リソース ファイル</Filter>
+      <Filter>mリソース ファイル</Filter>
     </ResourceCompile>
   </ItemGroup>
 </Project>

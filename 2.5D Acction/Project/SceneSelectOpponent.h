@@ -12,7 +12,6 @@ public:
 	void Initialize(void);
 	bool Load(void);
 	void Update(void);
-	void UpdateDebug(void);
 	void Render(void);
 	void RenderDebug(void);
 	void Release(void);

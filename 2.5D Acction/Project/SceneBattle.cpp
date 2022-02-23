@@ -2,10 +2,7 @@
 
 CSceneBattle::CSceneBattle() :
 	m_RemCountDown(0),
-	m_EndPattern(0),
-	m_CPos(0, 50.0f, 0),
-	m_TPos(0, 0, 0),
-	m_CUp(0, 0, 1)
+	m_EndPattern(0)
 {
 	memset(m_bLose, false, sizeof(m_bLose));
 }
@@ -57,26 +54,9 @@ void CSceneBattle::Initialize() {
 	m_bGameEndMenu = false;
 	m_bPauseMenu = false;
 	m_EndPattern = -1;
-
-	// カメラの設定
-	//カメラの設定
-	m_Camera.SetViewPort();
-	m_Camera.LookAt(m_CPos, m_TPos, m_CUp);
-	m_Camera.PerspectiveFov(MOF_ToRadian(60.0f), 1024.0f / 768.0f, 0.01f, 2000.0f);
-	m_Camera.Update();
-	CGraphicsUtilities::SetCamera(&m_Camera);
-
-
-	for (int i = 0; i < 4; i++)
-	{
-		m_Pos[i] = CVector3(0, 0, 0);
-	}
-	m_MoveNo = 0;
 }
 
 void CSceneBattle::Update() {
-	m_Camera.Update();
-
 	CJokerSkillManager::GetInstance().Update();
 	if (m_bPauseMenu)
 	{
@@ -156,10 +136,6 @@ void CSceneBattle::Update() {
 	}
 }
 
-void CSceneBattle::UpdateDebug() {
-
-}
-
 void CSceneBattle::PauseMenu() {
 	CInputManager::GetInstance().SelectVertical(m_MenuPlayer, m_PauseMenuSelect, m_PauseMenuItemCount, 0, true);
 	if (CInputManager::GetInstance().GetPush(m_MenuPlayer, 2))
@@ -216,18 +192,11 @@ void CSceneBattle::GameEndMenu() {
 
 void CSceneBattle::Render() {
 	RenderCountDown();
-
-	//深度バッファ有効化
-	g_pGraphics->SetDepthEnable(TRUE);
-
 	// 自機となる円の表示
 	for (int i = 0; i < m_PlayerCount; ++i)
 	{
 		m_Player[i]->Render();
 	}
-
-	g_pGraphics->SetDepthEnable(FALSE);
-
 
 	RenderUI();
 	if (m_bGameEndMenu)

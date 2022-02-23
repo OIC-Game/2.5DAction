@@ -35,10 +35,6 @@ void CSceneSelectOpponent::Update() {
 	}
 }
 
-void CSceneSelectOpponent::UpdateDebug() {
-
-}
-
 void CSceneSelectOpponent::Render() {
 
 	for (int i = 0; i < m_MessageCount; i++)

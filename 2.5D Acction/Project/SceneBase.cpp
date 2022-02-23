@@ -2,6 +2,6 @@
 
 CSceneBase::CSceneBase() :
 	m_bEnd(false),
-	m_NextSceneNo(SceneNo::SCENENO_TITLE) {
+	m_NextSceneNo(0){
 	memset(m_SelectNo, 0, sizeof(m_SelectNo));
 }

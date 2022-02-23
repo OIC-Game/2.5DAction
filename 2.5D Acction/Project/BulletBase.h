@@ -1,7 +1,5 @@
 #pragma once
-#include	"SoundManager.h"
-#include	"TextureManager.h"
-#include	"JokerSkillManager.h"
+#include "GameDefine.h"
 
 typedef struct tag_BulletStatus {
 	CVector2	Pos;						// ’e‚ÌÀ•W
