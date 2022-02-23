@@ -9,18 +9,6 @@
 class CSceneBattle : public CSceneBase
 {
 private:
-	//カメラ
-	CCamera					m_Camera;
-	//カメラ位置
-	CVector3				m_CPos;
-	//カメラ注視点位置
-	CVector3				m_TPos;
-	//カメラの上方ベクトル
-	CVector3				m_CUp;
-
-	CVector3				m_Pos[4];
-	int						m_MoveNo;
-
 	static const int m_PlayerCount = 2;
 	int m_RemCountDown;
 	bool m_bLose[m_PlayerCount];
@@ -68,7 +56,6 @@ public:
 	void Initialize(void);
 	bool Load(void);
 	void Update(void);
-	void UpdateDebug(void);
 	void Render(void);
 	void RenderDebug(void);
 	void Release(void);

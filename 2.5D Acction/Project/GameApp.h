@@ -11,6 +11,7 @@
 
 //INCLUDE
 #include	"Mof.h"
+#include	"GameDefine.h"
 
 /*******************************//*!
 @brief	基本ゲームアプリ。

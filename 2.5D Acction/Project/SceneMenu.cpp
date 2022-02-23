@@ -44,10 +44,6 @@ void CSceneMenu::Update() {
 	}
 }
 
-void CSceneMenu::UpdateDebug() {
-
-}
-
 void CSceneMenu::Render() {
 
 	for (int i = 0; i < 3; i++)

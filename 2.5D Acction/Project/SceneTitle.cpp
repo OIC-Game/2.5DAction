@@ -30,10 +30,6 @@ void CSceneTitle::Update() {
 	}
 }
 
-void CSceneTitle::UpdateDebug() {
-
-}
-
 void CSceneTitle::Render() {
 
 	for (int i = 0; i < m_MessageCount; i++)

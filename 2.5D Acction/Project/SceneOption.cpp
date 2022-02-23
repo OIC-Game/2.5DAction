@@ -69,10 +69,6 @@ void CSceneOption::Update() {
 	}
 }
 
-void CSceneOption::UpdateDebug() {
-
-}
-
 void CSceneOption::Render() {
 
 	for (int i = 0; i < m_MessageCount; i++)

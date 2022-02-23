@@ -44,13 +44,13 @@
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>../../MofLibrary/Include;../../../MofLibrary/Include;$(IncludePath);</IncludePath>
     <LibraryPath>../../MofLibrary/Library;../../../MofLibrary/Library;$(LibraryPath);</LibraryPath>
-    <OutDir>$(SolutionDir)</OutDir>
+    <OutDir>$(SolutionDir)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>../../MofLibrary/Include;../../../MofLibrary/Include;$(IncludePath);</IncludePath>
     <LibraryPath>../../MofLibrary/Library;../../../MofLibrary/Library;$(LibraryPath);</LibraryPath>
-    <OutDir>$(SolutionDir)</OutDir>
+    <OutDir>$(SolutionDir)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -66,6 +66,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)\Library\Library;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>LIBCMTD;</IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib</AdditionalDependencies>
     </Link>
     <ResourceCompile>
       <PreprocessorDefinitions>USERNAME=$(USERNAME);</PreprocessorDefinitions>
@@ -101,15 +102,15 @@
     <ClCompile Include="ChargeLaser.cpp" />
     <ClCompile Include="ChargeShot.cpp" />
     <ClCompile Include="ContinuousenEnergyShot.cpp" />
+    <ClCompile Include="SceneSelectOpponent.cpp" />
     <ClCompile Include="DoubtRing.cpp" />
     <ClCompile Include="ExplosionShot.cpp" />
     <ClCompile Include="GameApp.cpp" />
+    <ClCompile Include="GameDefine.cpp" />
     <ClCompile Include="GrowShot.cpp" />
     <ClCompile Include="HomingGun.cpp" />
     <ClCompile Include="HomingShot.cpp" />
-    <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="JOKER.cpp" />
-    <ClCompile Include="JokerSkillManager.cpp" />
     <ClCompile Include="LaserDance.cpp" />
     <ClCompile Include="Lovey.cpp" />
     <ClCompile Include="MachineGun.cpp" />
@@ -122,11 +123,8 @@
     <ClCompile Include="SceneCharacterSelect.cpp" />
     <ClCompile Include="SceneMenu.cpp" />
     <ClCompile Include="SceneOption.cpp" />
-    <ClCompile Include="SceneSelectOpponent.cpp" />
     <ClCompile Include="SceneTitle.cpp" />
     <ClCompile Include="SonicBeam.cpp" />
-    <ClCompile Include="SoundManager.cpp" />
-    <ClCompile Include="TextureManager.cpp" />
     <ClCompile Include="TrickGun.cpp" />
     <ClCompile Include="WaveShot.cpp" />
     <ClCompile Include="WinMain.cpp" />
@@ -145,36 +143,29 @@
     <ClInclude Include="ChargeLaser.h" />
     <ClInclude Include="ChargeShot.h" />
     <ClInclude Include="ContinuousenEnergyShot.h" />
-    <ClInclude Include="ControlManager.h" />
+    <ClInclude Include="SceneSelectOpponent.h" />
     <ClInclude Include="DoubtRing.h" />
     <ClInclude Include="ExplosionShot.h" />
     <ClInclude Include="GameApp.h" />
+    <ClInclude Include="GameDefine.h" />
     <ClInclude Include="GrowShot.h" />
     <ClInclude Include="HomingGun.h" />
     <ClInclude Include="HomingShot.h" />
-    <ClInclude Include="InputManager.h" />
     <ClInclude Include="JOKER.h" />
-    <ClInclude Include="JokerSkillManager.h" />
     <ClInclude Include="LaserDance.h" />
     <ClInclude Include="Lovey.h" />
     <ClInclude Include="MachineGun.h" />
     <ClInclude Include="MachShot.h" />
-    <ClInclude Include="OpponentManager.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="RipplesBullet.h" />
     <ClInclude Include="RipplesShot.h" />
     <ClInclude Include="SceneBase.h" />
     <ClInclude Include="SceneBattle.h" />
     <ClInclude Include="SceneCharacterSelect.h" />
-    <ClInclude Include="SceneFactory.h" />
     <ClInclude Include="SceneMenu.h" />
-    <ClInclude Include="SceneNo.h" />
     <ClInclude Include="SceneOption.h" />
-    <ClInclude Include="SceneSelectOpponent.h" />
     <ClInclude Include="SceneTitle.h" />
     <ClInclude Include="SonicBeam.h" />
-    <ClInclude Include="SoundManager.h" />
-    <ClInclude Include="TextureManager.h" />
     <ClInclude Include="TrickGun.h" />
     <ClInclude Include="WaveShot.h" />
     <ClInclude Include="YamadaBall.h" />
@@ -185,10 +176,10 @@
     <ClInclude Include="YamadaTarou.h" />
     <ClInclude Include="YamadaWorld.h" />
   </ItemGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <ImportGroup Label="ExtensionTargets">
-  </ImportGroup>
   <ItemGroup>
     <ResourceCompile Include="Version.rc" />
   </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
 </Project>

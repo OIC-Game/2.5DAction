@@ -46,11 +46,8 @@ void CMachShot::Update(CCircle player, CCircle enemy) {
 }
 
 void CMachShot::Render() {
-	if (!m_BStatus.bDrow) { return; }
-	CMatrix44 matWorld;
-	matWorld.Scaling(1, 1, 1);
-	matWorld.SetTranslation(m_BStatus.Pos.x, 0, m_BStatus.Pos.y);
-	CGraphicsUtilities::RenderSphere(matWorld, CVector4(1.0f, 1.0f, 0.0f, 1.0f));
+	if (m_BStatus.bDrow)
+		CGraphicsUtilities::RenderFillCircle(GetRenderCircle(), (m_PlayerNo == 0) ? MOF_COLOR_WHITE : MOF_COLOR_YELLOW);
 }
 
 void CMachShot::Release() {
